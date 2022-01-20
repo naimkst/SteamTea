@@ -1,0 +1,34 @@
+/*-------------------------
+#.single-product
+--------------------------*/
+.single-product {
+    text-align: center;
+    background: #E6DFD9;
+    border-radius: .5rem;
+    margin: .5rem;
+    padding: 2rem;
+    .product-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .product-title {
+            margin: 0;
+            font-family: 'Antipol';
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--bColor);
+            text-transform: uppercase;
+            a {
+                color: var(--bColor);
+                transition: $transition;
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+        .icon {
+            max-width: 2rem;
+            margin-left: 1rem;
+        }
+    }
+}

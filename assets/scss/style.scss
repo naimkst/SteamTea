@@ -1,0 +1,43 @@
+/*
+------------- Table of content ----------------
+
+Template Name: pexeer Responsive HTML5 Template
+Template URI: http://pexeer.com
+Description: pexeer Responsive HTML5 Template
+Author: Gobinda Sarkar
+Author URI: http://pexeer.com
+Version: 1.0
+
+---------------------- common content ----------
+1.body reset content
+#.header area
+#.footer-area
+#.hero-banner
+#.single-product
+#.featured-items-area
+#.story-area
+
+*/
+
+/*-------------------------
+#.story-area
+--------------------------*/
+
+// variable
+@import "variable/_variable.scss";
+
+// mixin
+@import "mixin/_mixin.scss";
+
+// body reset content
+@import "reset/_predefine.scss";
+
+// component content
+@import "section/header/header";
+@import "section/footer-area/footer-area";
+@import "section/hero-banner/hero-banner";
+@import "section/single-product/single-product";
+@import "section/featured-items-area/featured-items-area";
+@import "section/story-area/story-area";
+
+
