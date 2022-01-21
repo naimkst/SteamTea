@@ -1,9 +1,9 @@
 /*-------------------------
-#.hero-banner
+#.story-banenr-area
 --------------------------*/
-.hero-banner {
-    padding: 350px 0;
-    background: url('../images/banner-bg.png');
+.story-banenr-area {
+    padding: 250px 0 350px 0;
+    background: url('../images/story-banner-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -15,48 +15,34 @@
         color: var(--bColor);
     }
     .banner-content {
-        margin-bottom: 3.5rem;
         font-family: 'Greycliff CF Demi';
         font-size: 2.5rem;
         line-height: 3.3rem;
         font-weight: bold;
         color: var(--bColor);
-        a {
-            display: inline-block;
-            color: var(--primary-color);
-            transition: $transition;
-            &:hover {
-                color: var(--hover-color);
-            }
-        }
     }
 }
 @media (max-width: 1399px) {
-    .hero-banner .baner-title {
+    .story-banenr-area .baner-title {
         font-size: 7rem;
         line-height: 8rem;
     }
 }
 @media (max-width: 1199px) {
-    .hero-banner .baner-title {
+    .story-banenr-area .baner-title {
         font-size: 6rem;
         line-height: 7rem;
     }
-    .hero-banner {
-        padding: 250px 0;
-    }
-}
-@media (max-width: 991px) {
-    .hero-banner {
+    .story-banenr-area {
         padding: 200px 0 100px 0;
     }
 }
 @media (max-width: 480px) {
-    .hero-banner .baner-title {
+    .story-banenr-area .baner-title {
         font-size: 4rem;
         line-height: 5rem;
     }
-    .hero-banner .banner-content {
+    .story-banenr-area .banner-content {
         font-size: 2rem;
     }
 }

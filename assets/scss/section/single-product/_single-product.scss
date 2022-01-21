@@ -18,6 +18,7 @@
             font-weight: bold;
             color: var(--bColor);
             text-transform: uppercase;
+            text-align: left;
             a {
                 color: var(--bColor);
                 transition: $transition;
@@ -30,5 +31,15 @@
             max-width: 2rem;
             margin-left: 1rem;
         }
+    }
+}
+@media (max-width: 575px) {
+    .single-product {
+        margin: .5rem 0;
+    }
+}
+@media (max-width: 480px) {
+    .single-product .product-info .product-title {
+        font-size: 1.6rem;
     }
 }

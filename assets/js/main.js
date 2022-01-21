@@ -32,29 +32,48 @@
       animation: 'fade'
     }); 
     /*-------------------------------------------
-    post-thumb-slide active
+    Product Quantity JS
     --------------------------------------------- */
-    $('.post-thumb-slide').slick({
-      infinite: true,
-      speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      focusOnSelect: true,
-      dots: false,
-      arrows: true,
-      prevArrow: '<i class="slick-prev fas fa-angle-left"></i> ',
-      nextArrow: '<i class="slick-next fas fa-angle-right"></i> ',
-      responsive: [
-        {
-          breakpoint: 481,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
+    var productQty = $(".product");
+    productQty.append('<button class="inc qty-btn">+</button>');
+    productQty.append('<button class= "dec qty-btn">-</button>');
+    $('.qty-btn').on('click', function (e) {
+      e.preventDefault();
+      var $button = $(this);
+      var oldValue = $button.parent().find('input').val();
+      if ($button.hasClass('inc')) {
+        var newVal = parseFloat(oldValue) + 1;
+      } else {
+        if (oldValue > 1) {
+          var newVal = parseFloat(oldValue) - 1;
+        } else {
+          newVal = 1;
         }
-      ]
+      }
+      $button.parent().find('input').val(newVal);
+    });
+    /*-------------------------------------------
+    product-thumb-slide active
+    --------------------------------------------- */
+    $('.product-image-slide').slick({
+      infinite: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      dots: false,
+      asNavFor: '.product-image-thumbnail',
+      draggable: false,
+    });
+    $('.product-image-thumbnail').slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.product-image-slide',
+      dots: false,
+      arrows: false,
+      focusOnSelect: true,
+      vertical: true,
     });
     
   });

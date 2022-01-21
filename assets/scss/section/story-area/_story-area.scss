@@ -21,3 +21,24 @@
         color: #FEF6EF;
     }
 }
+@media (max-width: 1199px) {
+    .story-area {
+        padding: 12rem 0;
+    }
+}
+@media (max-width: 767px) {
+    .story-area {
+        padding: 8rem 0;
+    }
+}
+@media (max-width: 480px) {
+    .story-area .story-title {
+        font-size: 4rem;
+        line-height: 5.3rem;
+    }
+    .story-area .story-content {
+        margin-bottom: 4rem;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}

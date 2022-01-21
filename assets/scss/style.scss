@@ -1,11 +1,11 @@
 /*
 ------------- Table of content ----------------
 
-Template Name: pexeer Responsive HTML5 Template
-Template URI: http://pexeer.com
-Description: pexeer Responsive HTML5 Template
+Template Name: SteamTea Responsive HTML5 Template
+Template URI: http://SteamTea.com
+Description: SteamTea Responsive HTML5 Template
 Author: Gobinda Sarkar
-Author URI: http://pexeer.com
+Author URI: http://SteamTea.com
 Version: 1.0
 
 ---------------------- common content ----------
@@ -16,11 +16,20 @@ Version: 1.0
 #.single-product
 #.featured-items-area
 #.story-area
+#.showcase-area
+#.pagination-area
+#.shop-area
+#.filter-area
+#.story-banenr-area
+#.about-area
+#.product-service
+#.recently-viewed
+#.single-product-section
 
 */
 
 /*-------------------------
-#.story-area
+#.single-product-section
 --------------------------*/
 
 // variable
@@ -39,5 +48,14 @@ Version: 1.0
 @import "section/single-product/single-product";
 @import "section/featured-items-area/featured-items-area";
 @import "section/story-area/story-area";
+@import "section/showcase-area/showcase-area";
+@import "section/pagination-area/pagination-area";
+@import "section/shop-area/shop-area";
+@import "section/filter-area/filter-area";
+@import "section/story-banenr-area/story-banenr-area";
+@import "section/about-area/about-area";
+@import "section/product-service/product-service";
+@import "section/recently-viewed/recently-viewed";
+@import "section/single-product-section/single-product-section";
 
 
