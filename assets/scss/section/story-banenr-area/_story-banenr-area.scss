@@ -2,11 +2,23 @@
 #.story-banenr-area
 --------------------------*/
 .story-banenr-area {
+    position: relative;
     padding: 250px 0 350px 0;
     background: url('../images/story-banner-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: rgba(255, 255, 255, .3);
+    }
     .baner-title {
         margin-bottom: 2rem;
         font-size: 8rem;
