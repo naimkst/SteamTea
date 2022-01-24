@@ -25,12 +25,13 @@ Version: 1.0
 #.product-service
 #.recently-viewed
 #.single-product-section
+#.primary-accordion
+#.text-page-area
+#.primary-form
 
 */
 
-/*-------------------------
-#.single-product-section
---------------------------*/
+
 
 // variable
 @import "variable/_variable.scss";
@@ -57,5 +58,8 @@ Version: 1.0
 @import "section/product-service/product-service";
 @import "section/recently-viewed/recently-viewed";
 @import "section/single-product-section/single-product-section";
+@import "section/primary-accordion/primary-accordion";
+@import "section/text-page-area/text-page-area";
+@import "section/primary-form/primary-form";
 
 

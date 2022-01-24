@@ -25,11 +25,11 @@ Version: 1.0
 #.product-service
 #.recently-viewed
 #.single-product-section
+#.primary-accordion
+#.text-page-area
+#.primary-form
 
 */
-/*-------------------------
-#.single-product-section
---------------------------*/
 :root {
   font-size: 62.5%;
   --primary-color: #3F65BC;
@@ -559,6 +559,55 @@ scrollUp
 }
 .section-inner-title .text-dark {
   color: var(--bColor);
+}
+
+.title-two {
+  font-size: 4.8rem;
+  font-weight: bold;
+  color: var(--bColor);
+}
+
+.title-three {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--bColor);
+}
+
+.title-four {
+  font-size: 3.4rem;
+  font-weight: bold;
+  color: var(--bColor);
+}
+
+.title-five {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: var(--bColor);
+}
+
+.unordered-list {
+  padding: 0;
+  margin: 0;
+}
+.unordered-list li {
+  list-style: disc;
+  list-style-position: inside;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: var(--bColor);
+}
+
+.ordered-list {
+  padding: 0;
+  margin: 0;
+}
+.ordered-list li {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: var(--bColor);
+  list-style-position: inside;
 }
 
 @media (max-width: 991px) {
@@ -1219,7 +1268,7 @@ scrollUp
 }
 @media (max-width: 767px) {
   .story-area {
-    padding: 8rem 0;
+    padding: 8rem 1rem;
   }
 }
 @media (max-width: 480px) {
@@ -1902,45 +1951,6 @@ scrollUp
   font-weight: bold;
   color: var(--bColor);
 }
-.single-product-section .product-section-right .product-content .accordion-item {
-  background: transparent;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.single-product-section .product-section-right .product-content .accordion-header .accordion-button {
-  background: transparent;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  padding: 1.5rem 0;
-  font-family: "Greycliff CF";
-  font-size: 1.6rem;
-  font-weight: bold;
-  text-transform: capitalize;
-  color: var(--bColor);
-  border-bottom: 1px solid var(--bColor);
-}
-.single-product-section .product-section-right .product-content .accordion-header .accordion-button:after {
-  background: transparent;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f067";
-}
-.single-product-section .product-section-right .product-content .accordion-header .accordion-button:not(.collapsed):after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.single-product-section .product-section-right .product-content .accordion-body {
-  padding: 1.5rem 0;
-}
-.single-product-section .product-section-right .product-content .accordion-body p {
-  margin: 0;
-  font-size: 1.6rem;
-  line-height: 2rem;
-  font-weight: 500;
-  color: var(--bColor);
-}
 
 @media (max-width: 991px) {
   .single-product-section .product-section-right {
@@ -1990,4 +2000,176 @@ scrollUp
     width: calc(100% - 45px);
     padding-left: 1rem;
   }
+}
+/*-------------------------
+#.primary-accordion
+--------------------------*/
+.primary-accordion .accordion-item {
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.primary-accordion .accordion-header .accordion-button {
+  background: transparent;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1.5rem 0;
+  font-family: "Greycliff CF";
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: var(--bColor);
+  border-bottom: 1px solid var(--bColor);
+}
+.primary-accordion .accordion-header .accordion-button:after {
+  background: transparent;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f067";
+}
+.primary-accordion .accordion-header .accordion-button:not(.collapsed):after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.primary-accordion .accordion-body {
+  padding: 1.5rem 0;
+}
+.primary-accordion .accordion-body p {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: var(--bColor);
+}
+
+/*-------------------------
+#.text-page-area
+--------------------------*/
+.text-page-area .feature-area {
+  margin: 7rem 0;
+}
+.text-page-area .feature-area .title-three {
+  margin-bottom: 1.5rem;
+}
+.text-page-area .feature-area .title-four {
+  margin-bottom: 1.5rem;
+}
+.text-page-area .feature-area .title-five {
+  margin-bottom: 1.5rem;
+}
+.text-page-area .feature-area .feature-content {
+  margin: 4.5rem 0;
+}
+.text-page-area .feature-area .feature-content p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: var(--bColor);
+}
+.text-page-area .feature-area .feature-list .feature-title {
+  margin-bottom: 1.5rem;
+  font-family: "Greycliff CF";
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--bColor);
+}
+
+@media (max-width: 11399px) {
+  .text-page-area .title-two {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 1199px) {
+  .text-page-area .title-three {
+    font-size: 3.2rem;
+  }
+
+  .text-page-area .title-four {
+    font-size: 2.6rem;
+  }
+
+  .text-page-area .title-five {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .text-page-area .feature-area .feature-list {
+    margin: 1.5rem 0;
+  }
+
+  .text-page-area .title-two {
+    font-size: 3.6rem;
+  }
+
+  .text-page-area .feature-area {
+    margin: 4rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .text-page-area .text-page-left {
+    margin-bottom: 3rem;
+  }
+
+  .text-page-area .primary-form .form-btn {
+    margin-top: 2rem;
+  }
+}
+/*-------------------------
+#.primary-form
+--------------------------*/
+.primary-form .form-title {
+  margin-bottom: 3.5rem;
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--bColor);
+}
+.primary-form .form-btn {
+  display: block;
+  min-width: 23rem;
+  margin-top: 2.5rem;
+}
+.primary-form .form-group {
+  margin-bottom: 3rem;
+}
+.primary-form .form-group .form-control {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  height: 4.8rem;
+  border: 1px solid var(--bColor);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  font-family: "Greycliff CF";
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--bColor);
+  border-radius: 0;
+}
+.primary-form .form-group .message-box {
+  height: 16rem;
+  resize: none;
+}
+.primary-form .form-group .form-check {
+  margin-bottom: 1rem;
+}
+.primary-form .form-group .form-check .form-check-label {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--bColor);
+  cursor: pointer;
+}
+.primary-form .form-group .form-check .form-check-input {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid var(--bColor);
+  background: transparent;
+}
+.primary-form .form-group .form-check .form-check-input:checked {
+  background: var(--bColor);
 }
