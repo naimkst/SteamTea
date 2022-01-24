@@ -252,3 +252,11 @@
         padding-right: 2rem;
     }
 }
+@media (max-width: 375px) {
+    .header-area .header-wrap .header-right ul li {
+        margin-right: 1rem;
+    }
+    .header-area .menu-bar {
+        margin-left: 2.5rem;
+    }
+}

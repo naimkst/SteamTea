@@ -43,3 +43,8 @@
         font-size: 1.6rem;
     }
 }
+@media (max-width: 360px) {
+    .single-product-section .secondary-btn {
+        padding: 2rem 3rem;
+    }
+}
